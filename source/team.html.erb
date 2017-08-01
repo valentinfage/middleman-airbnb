@@ -1,0 +1,11 @@
+<div id="about">
+<ul class="list-inline text-center">
+  <% ["valentinfage"].each do |gh_username| %>
+  <h1>This template is built with <i class="fa fa-heart"></i> by <%="#{gh_username}"%> </h1>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+      <h2><%= gh_username.capitalize %></h2>
+    </li>
+  <% end %>
+</ul>
+</div>
